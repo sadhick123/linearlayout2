@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="#031E8A">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="252dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/classroom">
+
+        </ImageView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/show_attendence"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="#CDDC39"
+            android:elevation="10dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:padding="25dp"
+                android:translationY="-30dp"
+                android:src="@drawable/viewattendance" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show Attendence"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FBFAFA"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="20dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mark_attendence"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:background="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/show_attendence"
+            android:layout_marginRight="20dp"
+            app:cardBackgroundColor="#FF9800"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:padding="10dp"
+                android:translationY="-30dp"
+                android:src="@drawable/markattendance" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mark Attendence"
+                android:gravity="center"
+                android:textColor="#FBFAFA"
+                android:textStyle="bold"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="20dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_work"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:background="@color/black"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="#3F51B5"
+            android:layout_toEndOf="@id/show_attendence"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:padding="20dp"
+                android:translationY="-25dp"
+                android:src="@drawable/homework" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home work"
+                android:textColor="#FBFAFA"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="20dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/gallery"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/show_attendence"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#7E490559"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:textStyle="bold"
+                android:textColor="#FBFAFA"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="25sp">
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:translationY="-3dp"
+                android:translationX="39dp"
+                android:src="@drawable/gallery" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Notice"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="#FFC107"
+            android:layout_toRightOf="@id/gallery"
+            android:layout_below="@id/show_attendence"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notice"
+                android:textStyle="bold"
+                android:textColor="#FBFAFA"
+                android:layout_gravity="center|left"
+                android:layout_marginStart="25sp">
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:translationY="-3dp"
+                android:translationX="39dp"
+                android:src="@drawable/message" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/About"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/gallery"
+            android:layout_below="@id/gallery"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#FF5722"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textStyle="bold"
+                android:textColor="#FBFAFA"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="25sp">
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:translationY="-3dp"
+                android:translationX="39dp"
+                android:src="@drawable/about" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/About"
+            android:layout_below="@id/gallery"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#8BC34A"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay fee"
+                android:textStyle="bold"
+                android:textColor="#FBFAFA"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="25sp">
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:translationY="-3dp"
+                android:translationX="39dp"
+                android:src="@drawable/fees" />
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
